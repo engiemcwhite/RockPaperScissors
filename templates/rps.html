@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  
+  <body>
+    
+    <h3>Wins: {{session['Win']}}</h3> <br>
+    <h3>Losses: {{session['Lose']}}</h3> <br>
+    <h3>Ties: {{session['Tie']}}</h3>
+    <br><br><br>
+    <h2>What are you going to throw?</h2>
+    <form action="/rock">
+        <input type="submit" value = "Rock">
+    </form>
+    <form action="/paper">
+        <input type="submit" value = "Paper">
+    </form>
+    <form action="/scissors">
+        <input type="submit" value = "Scissors">
+    </form>
+    <h1>{{session['Message']}}</h1>
+  </body>
+</html>
